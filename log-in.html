@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        .container {
+            background: rgba(240, 240, 240, 0.3);
+            border-radius: 10px;
+            height: 30rem;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        input {
+            height: 50px;
+        }
+
+        button {
+            height: 50px;
+        }
+
+        .user {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background: rgba(25, 25, 235, 0.3);
+        }
+
+        .user > i {
+            margin: auto;
+            position: absolute;
+            left: 27px;
+            top: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .form-check-label {
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body class="h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100 row-cols-3 bg-image" style="background-image:url(./bg.jpg); height: 100vh;">
+        <div class="container d-flex flex-column align-items-between col row position-relative">
+            <div class="user position-absolute top-0 start-50 translate-middle">
+                <i class="far fa-user fa-3x"></i>
+            </div>
+            <h1 class="text-center mt-5 ">Sign in</h1>
+            <div class="px-5 py-3 position-relative">
+                <i class="fas fa-user position-absolute p-2 icon fa-2x d-flex"></i>
+                <input type="text" class="form-control px-5" placeholder="Username">
+            </div>
+            <div class="px-5 py-3 position-relative">
+                <i class="fas fa-lock position-absolute p-2 icon fa-2x d-flex"></i>
+                <input type="password" class="form-control px-5" placeholder="Password">
+            </div>
+            <div class="px-5 py-3">
+                <input type="submit" value="Login" class="btn btn-primary form-control">
+            </div>
+            <div class="d-flex px-5 py-3 justify-content-between">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                    </label>
+                </div>
+
+                <a href="#">Forget password?</a>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.bundle.js"></script>
+</body>
+</html>
